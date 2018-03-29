@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Location App</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<p><a href="#myModal" id="addNewLink" rel="modal:open">Add new</a></p>
+<p><a href="#myModal" id="openModalHiddenLink" rel="modal:open" class="hide">Add new</a></p> <!--just workaround :)-->
+
+<table class="table" id="locationsTable">
+    <thead class="table-header">
+    <tr class="table-row">
+        <th style="width: 50px">#</th>
+        <th style="width: 200px">Address</th>
+        <th style="width: 100px">Area Size</th>
+        <th style="width: 250px">Points Locations</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+
+<div id="myModal" class="modal">
+    <div id="panel">
+        <div>
+            <div class="search-container">
+                <label for="address-input" class="address-lbl">Address</label>
+                <input id="address-input" type="text" placeholder="Search"/>
+            </div>
+            <button id="confirmBtn" disabled>Confirm selection</button>
+            <br/>
+
+            <button id="resetBtn">Reset Selection</button>
+            <div id="area"></div>
+        </div>
+    </div>
+    <div id="map"></div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC65Qqk55_cD1MGC2xr43vl8ojU08Kla_A&libraries=geometry,drawing,places"></script>
+
+<script src="locationsTable.js"></script>
+<script src="map.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

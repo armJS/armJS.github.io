@@ -1,0 +1,110 @@
+#map,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#panel {
+    width: 250px;
+    height: 100%;
+    background: black;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    float: right;
+    padding: 5px;
+}
+
+.address-lbl {
+    color: white;
+    font-size: 20px;
+}
+
+.search-container {
+    margin-top: 200px;
+}
+
+#address-input {
+    height: 25px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button#confirmBtn, button#resetBtn {
+    margin-top: 200px;
+    padding: 5px 10px;
+    font-size: 18px;
+    margin-left: 25px;
+    background-color: transparent;
+    color: orangered;
+    border: 2px solid orangered;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button#confirmBtn:disabled {
+    background: #dddddd;
+}
+
+button#resetBtn {
+    background-color: transparent;
+    color: blue;
+    border: 2px solid blue;
+}
+
+.table {
+    border-collapse: collapse;
+    border: 1px solid beige;
+}
+
+table, th {
+    border: 1px solid silver;
+}
+
+.table-header {
+    background: #000;
+    color: white;
+}
+
+.table-row {
+    width: 100%;
+}
+
+.table th {
+    padding: 10px 20px;
+}
+
+.table td {
+    text-align: center;
+}
+
+div.modal {
+    max-width: 1500px;
+    height: 100%;
+}
+
+.edit {
+    cursor: pointer
+}
+
+.hide {
+    display: none;
+}
+
+a#addNewLink, a#addNewLink:visited {
+    background-color: black;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a#addNewLink:hover, a#addNewLink:active {
+    background-color: gray;
+}
